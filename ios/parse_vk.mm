@@ -41,7 +41,7 @@
 	self = [super init];
 	if (self)
 	{
-		callback = cb;
+		callback = [cb copy];
 		[NSNotificationCenter addObserver:self selector:@selector(onSuccess) name:NZVKontakteReceivedToken];
 		[NSNotificationCenter addObserver:self selector:@selector(onFailure) name:NZVKontakteAccessDenied];
 	}
@@ -51,6 +51,10 @@
 -(void)dealloc
 {
 	[NSNotificationCenter removeObserver:self];
+
+	[callback release];
+	callback = nil;
+
 	[super dealloc];
 }
 
