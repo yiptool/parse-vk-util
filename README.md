@@ -1,8 +1,8 @@
 
-iOS VK Util for Parse.com
-=========================
+VK Util for Parse.com
+=====================
 
-This is an Objective-C library with useful wrappers for VK (VKontakte) API for use
+This is a library with useful wrappers for the VK (VKontakte) API for use
 together with the Parse framework.
 
 Compiling this library
@@ -11,7 +11,7 @@ Compiling this library
 This library is not intended to be built directly. Instead it is supposed
 to be included into projects using the [Yip](https://github.com/yiptool/yip.git).
 
-Use the `import ios-parse-vk-util` directive in your `Yipfile` to use this
+Use the `import parse-vk-util` directive in your `Yipfile` to use this
 library.
 
 License
